@@ -1,0 +1,265 @@
+:root {
+    --font: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --soft-gray: #f0f2f5;
+    --blue-f: #1877f2;
+    --green-f: #42b72a;
+}
+
+body {
+    font-family: var(--font);
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.1);
+}
+header .search-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header .search-section .facebook-logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+header .search-section .search-container {
+    position: relative;
+}
+header .search-section .search-container img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 9px;
+    left: 6px;
+}
+header .search-section .search-container input {
+    width: 290px;
+    height: 40px;
+    border: none;
+    background-color: var(--soft-gray);
+    border-radius: 20px;
+    padding: 0 33px;
+}
+header .icons-profiles {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+header .icons-profiles img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+header .option-profile {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .option-profile .images-container-option  {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--soft-gray);
+    border-radius: 50%;
+    cursor: pointer;
+}
+header .option-profile .images-container-option img {
+    width: 22px;
+    height: 22px;
+}
+header .option-profile .profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--soft-gray);
+    width: 100vw;
+    height: 100vh;
+}
+main aside div {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 15px 0 0 10px; 
+}
+main aside div:hover {
+    background-color: #a0a1a1;
+}
+main aside div img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+main aside div .profile {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+main aside div p {
+    font-weight: 700;
+}
+main .main__principal {
+    overflow-y: scroll;
+    width: 700px;
+}
+main .main__principal::-webkit-scrollbar {
+    width: 0.5em;
+}
+main .main__principal::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+main .main__principal::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+main .main__principal .post {
+    width: 700px;
+    margin-top: 20px;
+    padding: 0 0 10px 0;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .main__principal .post .container-post {
+    width: 90%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #d1d2d3;
+}
+main .main__principal .post .container-post img { 
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 20px 0 0; 
+}
+main .main__principal .post .container-post input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: var(--soft-gray);
+    border-radius: 10px;
+    padding: 0 0 0 10px;
+}
+main .main__principal .post .container-post input:hover {
+    background-color: #cccfcf;
+}
+main .main__principal .post .post-opcions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+main .main__principal .post .post-opcions div {
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+}
+main .main__principal .post .post-opcions div:hover {
+    background-color: #a0a1a1;
+    border-radius: 10px;
+}
+main .main__principal .post .post-opcions img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    padding: 0 10px;
+}
+main .main__principal .post .post-opcions p {
+    font-weight: 500;
+    color: #2f2f2f;
+}
+main .publication {
+    width: 700px;
+    margin-top: 20px;
+    padding: 0 0 10px 0;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+main .publication .publication-description {
+    margin-left: 34px;
+}
+main .publication .user-publication-info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+main .publication .user-publication-info .container-image-publication {
+    display: flex;
+    flex-direction: column;
+}
+main .publication .user-publication-info .container-image-publication p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+main .publication .user-publication-info .publication-menu {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+main .publication .user-publication-info img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 10px 0 35px;
+}
+main .publication .reactions {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+
+} 
+main .publication .reactions img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+main .publication .reactions p {
+    margin: 0 0 0 100px;
+    font-weight: 300;
+    color: #a0a1a1;
+}
+main .publication .user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .publication .user-actions img {
+    width: 20px;
+    width: 20px;
+    object-fit: cover;
+}
